@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+<Dialog id="idRejectDialog">
+        <f:SimpleForm id="SimpleFormChange3" editable="true">
+        <Label text="Reason for Rejection" id="idTXT1" required="true" />
+        <Select id="idSelect" items="{localModel>/RejectReasons}" width="auto">
+        <items>
+	    <core:Item key="{localModel>key}" text="{localModel>text}" id="idCoreItem" />
+        </items>
+        </Select>
+        </f:SimpleForm>
+        <beginButton>
+			<Button id="idBtnOK" press="onSelect" text="Ok" type="Emphasized"/>
+		</beginButton>
+		<endButton>
+			<Button id="idBtnCancel" press="onClose" text="Cancel"/>
+		</endButton>
+</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,38 @@
+<core:FragmentDefinition
+	xmlns="sap.ui.comp.valuehelpdialog"
+	xmlns:m="sap.m"
+	xmlns:fb="sap.ui.comp.filterbar"
+	xmlns:core="sap.ui.core">
+	<ValueHelpDialog id="idVHD"
+		title="Product"
+		ok=".onValueHelpOkPress"
+		cancel=".onValueHelpCancelPress"
+		supportRanges="true"
+		key="ProductCode"
+		descriptionKey="ProductName">
+		<filterBar>
+			<fb:FilterBar id="idFLB" advancedMode="true" search=".onFilterBarSearch" isRunningInValueHelpDialog="true">
+				<fb:filterGroupItems>
+					<fb:FilterGroupItem id="idFGI"
+						groupName="__$INTERNAL$"
+						name="ProductCode"
+						label="Product Code"
+						visibleInFilterBar="true">
+						<fb:control>
+							<m:Input id="idInp" name="ProductCode" />
+						</fb:control>
+					</fb:FilterGroupItem>
+					<fb:FilterGroupItem id="idFGI1"
+						groupName="__$INTERNAL$"
+						name="ProductName"
+						label="Product Name"
+						visibleInFilterBar="true">
+						<fb:control>
+							<m:Input id="idInp1" name="ProductName" />
+						</fb:control>
+					</fb:FilterGroupItem>
+				</fb:filterGroupItems>
+			</fb:FilterBar>
+		</filterBar>
+	</ValueHelpDialog>
+</core:FragmentDefinition>

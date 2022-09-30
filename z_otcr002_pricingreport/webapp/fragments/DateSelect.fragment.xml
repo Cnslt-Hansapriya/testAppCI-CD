@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+<Dialog id="idDateDialog">
+            <f:SimpleForm id="SimpleFormChange" editable="true">
+                    <Label text="From" id="idtxt1" />
+                    <DatePicker width="99%"
+                            id="DP2"
+                            placeholder="Enter Date"
+                            change="handleFromDate"
+                            />
+                    <Label text="To" id="idtxt2" />
+                    <DatePicker width="99%"
+                            id="DP1"
+                            placeholder="Enter Date"
+                            change="handleToDate"
+                            />
+                </f:SimpleForm>
+                 <beginButton>
+			        <Button id="idBtnOKDT" press="onDateOk" text="Ok" type="Emphasized"/>
+		        </beginButton>
+		        <endButton>
+			        <Button id="idBtnCancelDT" press="onDateClose" text="Cancel"/>
+		        </endButton>
+</Dialog>
+</core:FragmentDefinition>

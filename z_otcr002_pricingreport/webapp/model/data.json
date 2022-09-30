@@ -1,0 +1,189 @@
+{
+    "details" : [
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        },
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        },
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        },
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        },
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        },
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        },
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        },
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        },
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        },
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        },
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        },
+        {
+            "SalesDocument" : "ABC",
+            "Item" : "ABC",
+            "SoldToParty" : "ABC",
+            "Product" : "ABC",
+            "CustExpectedValue" : "10.0",
+            "CustExpectedPrice" : "9.0",
+            "CustPriceUnit" : "KG",
+            "NetPrice" : "10.0",
+            "NetPriceUnit" : "KG",
+            "OrderQuantity" : "3",
+            "NetValue" : "10.0",
+            "ConditionType" : "New"
+        }
+
+    ],
+
+    "RejectReasons" : [
+        {
+            "key": "A",
+            "text": "ABC"
+        },{
+            "key": "B",
+            "text": "DEF"
+        },{
+            "key": "C",
+            "text": "GHI"
+        },{
+            "key": "DZ",
+            "text": "JKL"
+        }
+    ]
+}

@@ -1,0 +1,183 @@
+<mvc:View controllerName="com.fiori.otcr002.zotcr002pricingreport.zotcr002pricingreport.controller.pricingReport"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar" xmlns:core="sap.ui.core"
+    xmlns="sap.m" xmlns:t="sap.ui.table">
+    <Page id="page" title="{i18n>title}">
+        <content>
+           <IconTabBar
+		    id="idIconTabBar"
+		    select=".onSelect">
+		    <items>
+			<IconTabFilter id="idItf1"
+				icon="sap-icon://manager-insight"
+				text="Report 1"
+				key="Report1">
+            
+                    <smartFilterBar:SmartFilterBar id="smartFilterBar" persistencyKey="UniqueAndStablePersistencyKey"
+                    considerSelectionVariants="true" entitySet="Items" beforeVariantSave="onBeforeVariantSave"  afterVariantLoad="onAfterVariantLoad">
+
+                    <smartFilterBar:controlConfiguration>
+                        <smartFilterBar:ControlConfiguration id="idCC1" key="SalesOrganization" index="1" label="Sales Organization"
+                            groupId="_BASIC" width="170px" visibleInAdvancedArea="false">
+                            <smartFilterBar:customControl>
+                                <Input id="idInput1" showValueHelp="true" valueHelpRequest="onFilterSelect"/>
+                            </smartFilterBar:customControl>
+                        </smartFilterBar:ControlConfiguration>
+                    </smartFilterBar:controlConfiguration>
+                    
+
+                     <smartFilterBar:controlConfiguration>
+                        <smartFilterBar:ControlConfiguration id="idCC2" key="DistributionChannel" index="1" label="Distribution Channel"
+                            groupId="_BASIC" width="170px" visibleInAdvancedArea="false">
+                            <smartFilterBar:customControl>
+                                <Input id="idInput2" showValueHelp="true" valueHelpRequest="onFilterSelect" />
+                            </smartFilterBar:customControl>
+                        </smartFilterBar:ControlConfiguration>
+                    </smartFilterBar:controlConfiguration>
+                     
+                     <smartFilterBar:controlConfiguration>
+                        <smartFilterBar:ControlConfiguration id="idCC3" key="SoldToParty" index="1" label="Sold-to Party"
+                            groupId="_BASIC" width="170px" visibleInAdvancedArea="false">
+                            <smartFilterBar:customControl>
+                                <Input id="idInput3" showValueHelp="true" valueHelpRequest="onFilterSelect"/>
+                            </smartFilterBar:customControl>
+                        </smartFilterBar:ControlConfiguration>
+                    </smartFilterBar:controlConfiguration>
+                 
+
+                     <smartFilterBar:controlConfiguration>
+                        <smartFilterBar:ControlConfiguration id="idCC4" key="Product" index="1" label="Product"
+                            groupId="_BASIC" width="170px" visibleInAdvancedArea="false">
+                            <smartFilterBar:customControl>
+                                <Input id="idInput4" showValueHelp="true" valueHelpRequest="onFilterSelect" />
+                            </smartFilterBar:customControl>
+                        </smartFilterBar:ControlConfiguration>
+                    </smartFilterBar:controlConfiguration>
+                    
+                    <smartFilterBar:controlConfiguration>
+                        <smartFilterBar:ControlConfiguration id="idCC6" key="CustomerReference" index="1" label="Customer Reference"
+                            groupId="_BASIC" width="170px" visibleInAdvancedArea="false">
+                            <smartFilterBar:customControl>
+                                <Input id="idInput6" />
+                            </smartFilterBar:customControl>
+                        </smartFilterBar:ControlConfiguration>
+                    </smartFilterBar:controlConfiguration>
+                      
+
+                     <smartFilterBar:controlConfiguration>
+                        <smartFilterBar:ControlConfiguration id="idCC5" key="CreatedOn" index="1" label="Created on"
+                            groupId="_BASIC" width="170px" visibleInAdvancedArea="false">
+                            <smartFilterBar:customControl>
+                                <Input id="idInput5" showValueHelp="true" valueHelpRequest="onDateSelect" />
+                            </smartFilterBar:customControl>
+                        </smartFilterBar:ControlConfiguration>
+                    </smartFilterBar:controlConfiguration>
+                    </smartFilterBar:SmartFilterBar>
+
+                    <t:Table id="idTable" selectionMode="MultiToggle" width="99%" rows="{localModel>/details}"  enableSelectAll="false" >
+                    <t:extension>
+                    <OverflowToolbar id="idOfTb" style="Clear">
+                    <Title id="title" text="Sales Document(0)"/>
+                    <ToolbarSpacer id="idTlbs" />
+                     <Button
+                        text="Accept Customer Price" id="idBtnACP" 
+                        press="onAccept"/>
+                    <Button
+                        text="Decline Customer Price" id="idBtnDC"
+                        press="onDecline"/>
+                    <Button
+                        text="Reject Item" id="idBtnRI"
+                        press="onReject"/>
+                    <Button
+                         id="idBtnExp" icon="sap-icon://excel-attachment"
+                        press="onExport"/>
+                    </OverflowToolbar>
+                    </t:extension>
+                    <t:columns>
+                        <t:Column id="idCl1" width="12rem" hAlign="Center">
+                        <Label id="idLbl1"  text="Sales Document" design="Bold" />
+                        <t:template>
+                            <Text id="idTxt1" text="{localModel>SalesDocument}" textAlign="Center" />
+                        </t:template>
+                        </t:Column>
+
+                        <t:Column id="idCl2" width="12rem" hAlign="Center">
+                        <Label id="idLbl2" text="Item(SD)" design="Bold" />
+                        <t:template>
+                        <Text id="idTxt2" text="{localModel>Item}" textAlign="Center" /></t:template>
+                        </t:Column>
+                        
+                        <t:Column id="idCl3" width="12rem" hAlign="Center">
+                        <Label id="idLbl3" text="Sold-to Party" design="Bold" />
+                        <t:template>
+                            <Text id="idTxt3" text="{localModel>SoldToParty}" textAlign="Center" /></t:template>
+                        </t:Column>
+
+                        <t:Column id="idCl4" width="12rem" hAlign="Center">
+                        <Label id="idLbl4" text="Product" design="Bold"  />
+                        <t:template>
+                            <Text id="idTxt4" text="{localModel>Product}" textAlign="Center" /></t:template>
+                        </t:Column>
+
+                         <t:Column id="idCl5" width="12rem" hAlign="Center">
+                        <Label id="idLbl5" text="Cust.-Expected Value" design="Bold"  />
+                        <t:template>
+                            <Text id="idTxt5" text="{localModel>CustExpectedValue}" textAlign="Center" /></t:template>
+                        </t:Column>
+
+                         <t:Column id="idCl6" width="12rem" hAlign="Center">
+                        <Label id="idLbl6" text="Cust.-Expected Price" design="Bold"  />
+                        <t:template>
+                            <Text id="idTxt6" text="{localModel>CustExpectedPrice}" textAlign="Center" /></t:template>
+                        </t:Column>
+
+                         <t:Column id="idCl7" width="12rem" hAlign="Center">
+                        <Label id="idLbl7" text="Cust.-Price Unit" design="Bold"  />
+                        <t:template>
+                            <Text id="idTxt7" text="{localModel>CustPriceUnit}" textAlign="Center" /></t:template>
+                        </t:Column>
+
+                         <t:Column id="idCl8" width="12rem" hAlign="Center">
+                        <Label id="idLbl8" text="Net Price" design="Bold"  />
+                        <t:template>
+                            <Text id="idTxt8" text="{localModel>NetPrice}" textAlign="Center" /></t:template>
+                        </t:Column>
+
+                         <t:Column id="idCl9" width="12rem" hAlign="Center">
+                        <Label id="idLbl9" text="Net Price Unit" design="Bold"  />
+                        <t:template>
+                            <Text id="idTxt9" text="{localModel>NetPriceUnit}" textAlign="Center" /></t:template>
+                        </t:Column>
+
+                         <t:Column id="idCl10" width="12rem" hAlign="Center">
+                        <Label id="idLbl10" text="Order Quantity" design="Bold"  />
+                        <t:template>
+                            <Text id="idTxt10" text="{localModel>OrderQuantity}" textAlign="Center" /></t:template>
+                        </t:Column>
+
+                         <t:Column id="idCl11" width="12rem" hAlign="Center">
+                        <Label id="idLbl11" text="Net Value" design="Bold"  />
+                        <t:template>
+                            <Text id="idTxt11" text="{localModel>NetValue}" textAlign="Center" /></t:template>
+                        </t:Column>
+
+                         <t:Column id="idCl12" width="12rem" hAlign="Center">
+                        <Label id="idLbl12" text="Condition Type" design="Bold"  />
+                        <t:template>
+                            <Text id="idTxt12" text="{localModel>ConditionType}" textAlign="Center" /></t:template>
+                        </t:Column>
+                        </t:columns>
+                        </t:Table>
+            </IconTabFilter>
+			<IconTabFilter id="idItf2"
+				icon="sap-icon://manager-insight"
+				text="Report 2"
+				key="Report2" />
+			<IconTabFilter id="idItf3"
+				icon="sap-icon://manager-insight"
+				text="Report 3"
+				key="Report3" />
+            </items>
+            </IconTabBar>
+            </content>
+    </Page>
+</mvc:View>
